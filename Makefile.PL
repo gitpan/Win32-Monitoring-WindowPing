@@ -21,7 +21,7 @@ WriteMakefile(
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?       ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'WindowPing.pm', # retrieve abstract from module
-       AUTHOR         => 'Roman Plessl (roman dot plessl at oetiker dot ch)'
+       AUTHOR         => 'Roman Plessl (rplessl at cpan dot org)'
     ) : ()),
     INC               => '-I.', # e.g., '-I. -I/usr/include/other',
     CCFLAGS           => $CCFLAGS,

@@ -1,4 +1,4 @@
-# $Id: WindowPing.pm 134 2008-08-21 11:37:25Z rplessl $
+# $Id: WindowPing.pm 137 2008-08-22 09:18:25Z rplessl $
 
 package Win32::Monitoring::WindowPing;
 
@@ -37,7 +37,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use constant WAS_ALIVE => 1;
 use constant WAS_TIMEOUT => 2;
@@ -54,7 +54,7 @@ __END__
 
 =head1 NAME
 
-Win32::Monitoring::WindowPing - Access to window status information on Win32 systems
+Win32::Monitoring::WindowPing - Test Win32 Window for responsiveness
 
 =head1 SYNOPSIS
 
@@ -81,15 +81,16 @@ Win32::Monitoring::WindowPing - Access to window status information on Win32 sys
 =head1 DESCRIPTION
 
 The Win32::Monitoring::WindowPing module provides a function to check if a
-windows desktop window was willing to respond to user input along with a set
-of companion functions such that you can implement a nive window alive
-program without requiering further modules.
+windows desktop window would be willing to respond to user input if there
+was any. As a bonus there is a set of companion functions included, such
+that you can implement a nice little window alive check program without
+requiring further modules.
 
 =over
 
 =item $HWND=GetActiveWindows()
 
-Returns the window handle of the curently active window on the window desktop
+Returns the window handle of the currently active window on the window desktop
 
 =item $status=PingWindow($HWND,$timeout_in_ms)
 
@@ -98,12 +99,12 @@ after timeout. Status is one of the following
 
  WAS_ALIVE      - The windows reacts
  WAS_TIMEOUT    - No reaction within the timeout period
- WAS_NOTAWINDOW - The given HWND does not corespond to a window
+ WAS_NOTAWINDOW - The given HWND does not correspond to a window
  WAS_OTHERERROR - Something else went wrong check LastError
 
 =item GetWindowCaption($HWND)
 
-Get the caption of the window. The function will climb the windw hierarchy
+Get the caption of the window. The function will climb the window hierarchy
 until it finds a window with a proper caption.
 
 =item $PID=GetProcessIdForWindow($HWND)
