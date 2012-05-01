@@ -37,7 +37,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use constant WAS_ALIVE => 1;
 use constant WAS_TIMEOUT => 2;
