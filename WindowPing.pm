@@ -1,4 +1,4 @@
-# $Id: WindowPing.pm 137 2008-08-22 09:18:25Z rplessl $
+# $Id: WindowPing.pm 498 2012-05-01 14:37:47Z oetiker $
 
 package Win32::Monitoring::WindowPing;
 
@@ -37,7 +37,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 use constant WAS_ALIVE => 1;
 use constant WAS_TIMEOUT => 2;

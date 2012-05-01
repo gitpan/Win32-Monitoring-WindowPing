@@ -1,5 +1,9 @@
 Revision history for Perl extension Win32::Monitoring::WindowPing.
 
+Win32-Monitoring-WindowsPing-0.06, Tue 2012-05-01
+-------------------------------------------------
+- Make compiling again
+
 Win32-Monitoring-WindowsPing-0.05, Fri 2008-08-22
 -------------------------------------------------
 - added ppd file

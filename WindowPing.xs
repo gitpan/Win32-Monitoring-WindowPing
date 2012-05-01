@@ -9,7 +9,7 @@
  * as published by the Free Software Foundation, either version 3 of the 
  * License, or (at your option) any later version.
  *
- * $Id: WindowPing.xs 127 2008-08-13 09:09:45Z rplessl $ 
+ * $Id: WindowPing.xs 152 2008-08-25 14:16:30Z rplessl $ 
  */
 
 #define __MSVCRT_VERSION__ 0x601
